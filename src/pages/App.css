@@ -26,13 +26,13 @@
   --highlight-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Modificações do body */
-body * {
+/* Modificações do App */
+#App * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
-body {
+#App {
   background: var(--bg-url) no-repeat top center / cover;
   height: 100vh;
 }
@@ -41,8 +41,9 @@ body {
 #container {
   width: 100%;
   max-width: 588px;
-  margin: 56px auto 0px;
+  margin: 0px auto 0px;
   padding: 0 24px;
+  padding: 56px;
 }
 
 /* Links */
@@ -63,3 +64,12 @@ body {
   font-size: 26px;
 }
 
+@media (max-width: 700px) {
+  :root {
+    --bg-url: url(../img/bg-mobile.jpg);
+  }
+
+  .light {
+    --bg-url: url(../img/bg-mobile-light.jpg);
+  }
+}

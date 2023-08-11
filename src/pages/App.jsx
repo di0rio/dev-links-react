@@ -13,13 +13,22 @@ import imgLightMode from "../img/imagemFundoBranco.jpg"
 const App = () => {
 const [isLightMode,setIsLightMode] = useState(false)
 
+const toggleMode = () => {
+    setIsLightMode((prevMode) => !prevMode)
+};
+
 const imgScr = isLightMode ? imgLightMode : imgDarkMode;
 const imgAlt = isLightMode ? "Imagem no modo CLaro" : "Imagem no modo Escuro"
 
     return(
+        <div id="App" className={isLightMode ? "light" : ""}>
+
         <div id="container">
+            
             <Profile imgSrc={imgScr} imgAlt={imgAlt}>@di0rio</Profile>
-            <Switch></Switch>
+
+            <Switch mode={toggleMode} infoButton={isLightMode}/>
+
             <div id="links">
              <ul>
                 <Links link={"#"}>GitHub</Links>
@@ -30,7 +39,7 @@ const imgAlt = isLightMode ? "Imagem no modo CLaro" : "Imagem no modo Escuro"
             </div>
 
         <div id="socialLinks">
-            <Social href={"#"} icon={"logo-github"}/> 
+            <Social href={"https://github.com/di0rio"} icon={"logo-github"}/> 
             <Social href={"#"} icon={"logo-instagram"}/> 
             <Social href={"#"} icon={"logo-youtube"}/>  
             <Social href={"#"} icon={"logo-twitter"}/>
@@ -38,6 +47,7 @@ const imgAlt = isLightMode ? "Imagem no modo CLaro" : "Imagem no modo Escuro"
 
             <Footer link={"#"}>@di0rio</Footer>
 
+        </div>
         </div>
     );
 };
