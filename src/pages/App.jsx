@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Profile from "../components/profile/profile";
 import Switch from "../components/switch/switch";
+import Links from "../components/links/links";
 
 import "./App.css"
 
@@ -17,6 +18,15 @@ const imgAlt = isLightMode ? "Imagem no modo CLaro" : "Imagem no modo Escuro"
         <div id="container">
             <Profile imgSrc={imgScr} imgAlt={imgAlt}>@di0rio</Profile>
             <Switch></Switch>
+            <div id="links">
+             <ul>
+                <Links link={"#"}>GitHub</Links>
+                <Links link={"#"}>Instagram</Links>
+                <Links link={"#"}>Portifólio</Links>
+                <Links link={"#"}>Projetos</Links>
+
+             </ul>
+            </div>
         </div>
     );
 };

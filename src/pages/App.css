@@ -1,36 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family= Inter:wght@400;500 & display =swap');
-
+@import url("https://fonts.googleapis.com/css2?family= Inter:wght@400;500 & display =swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
   --bg-url: url(../img/bg-desktop.jpg);
   --text-color: #fff;
-  --stroke-color:  rgba(255, 255, 255, 0.5);
-  --surface-color:  rgba(255, 255, 255, 0.1);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.5);
   --switch-bg-url: url(../img/moonStars.svg);
   --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 .light {
-    --bg-url: url(../img/bg-desktop-light.jpg);
-    --text-color: #000;
-    --stroke-color:  rgba(0, 0, 0, 0.5);
-    --surface-color:  rgba(0, 0, 0, 0.1);
-    --surface-color-hover: rgba(0, 0, 0, 0.5);
-    --switch-bg-url: url(../img/sun.svg);
-    --highlight-color: rgba(0, 0, 0, 0.2);
-  }
+  --bg-url: url(../img/bg-desktop-light.jpg);
+  --text-color: #000;
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.1);
+  --surface-color-hover: rgba(0, 0, 0, 0.5);
+  --switch-bg-url: url(../img/sun.svg);
+  --highlight-color: rgba(0, 0, 0, 0.2);
+}
 
 /* Modificações do body */
-body *{
-    font-family: "Inter", sans-serif;
-    color: var(--text-color);
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
 }
 
 body {
@@ -40,9 +39,17 @@ body {
 
 /* Modicações container */
 #container {
-    width: 100%;
-    max-width: 588px;
-    margin: 56px auto 0px;
-    padding: 0 24px;
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
 }
 
+/* Links */
+#links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
