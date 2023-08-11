@@ -53,3 +53,12 @@ body {
   gap: 16px;
   padding: 24px;
 }
+
+#socialLinks {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  gap: 16px;
+
+  font-size: 26px;
+}
