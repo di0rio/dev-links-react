@@ -31,21 +31,21 @@ const imgAlt = isLightMode ? "Imagem no modo CLaro" : "Imagem no modo Escuro"
 
             <div id="links">
              <ul>
-                <Links link={"#"}>GitHub</Links>
-                <Links link={"#"}>Instagram</Links>
-                <Links link={"#"}>Portifólio</Links>
-                <Links link={"#"}>Projetos</Links>
+                <Links link={"https://github.com/di0rio"}>GitHub</Links>
+                <Links link={"https://www.instagram.com/di0riocaua/"}>Instagram</Links>
+                <Links link={"https://open.spotify.com/user/l8xkfahzqmphm29tuf9xr6b48"}>Spotify</Links>
+                <Links link={"https://di0rio.github.io/"}>Projetos</Links>
              </ul>
             </div>
 
         <div id="socialLinks">
             <Social href={"https://github.com/di0rio"} icon={"logo-github"}/> 
-            <Social href={"#"} icon={"logo-instagram"}/> 
-            <Social href={"#"} icon={"logo-youtube"}/>  
-            <Social href={"#"} icon={"logo-twitter"}/>
+            <Social href={"https://account.xbox.com/pt-BR/Profile?xr=mebarnav&csrf=KU13Pu_U0hIp0KNfTokjz0q67KpU11OP4C4LeYt5TTDoAjHnvAhC1QOjKxLtMFJbmdg9JYhFZiVRz5vM00NIkU9HUCs1&wa=wsignin1.0"} icon={"logo-xbox"}/> 
+            <Social href={"https://www.youtube.com/channel/UCm5Nnkm-5JYL67tA1g2_w7w"} icon={"logo-youtube"}/>  
+            <Social href={"https://twitter.com/DiorioCaua"} icon={"logo-twitter"}/>
         </div>
 
-            <Footer link={"#"}>@di0rio</Footer>
+            <Footer link={"https://github.com/di0rio"}>@di0rio</Footer>
 
         </div>
         </div>
